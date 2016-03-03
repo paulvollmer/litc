@@ -11,7 +11,7 @@ bootstrap:
 
 test: build
 	@mkdir -p tmp
-	@./litc samples/sample.md tmp/main.go
+	@./litc samples/sample.go.md tmp/main.go
 	@go run tmp/main.go
 	@rm -rf tmp
 
