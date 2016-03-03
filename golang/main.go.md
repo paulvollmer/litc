@@ -9,7 +9,7 @@ the application is really lightweight and small in implementation.
 		"flag"
 		"io/ioutil"
 		"os"
-		"./lit"
+		"github.com/paulvollmer/litc/golang/lit"
 	)
 
 # commandline interface
