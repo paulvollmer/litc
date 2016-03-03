@@ -14,7 +14,7 @@
 
 the application is really lightweight and small in implementation.
 
-	var version = "0.2.3"
+	var version = "0.2.4"
 	func main() {
 
 # input
@@ -39,6 +39,10 @@ the application is really lightweight and small in implementation.
 	var inputData []byte
 
 	if totalArgs >= 1 {
+		if os.Args[1] == "version" {
+			fmt.Println("litc v"+version)
+			os.Exit(0)
+		}
 		// read file
 		inputData, err = ioutil.ReadFile(os.Args[1])
 		if err != nil {
