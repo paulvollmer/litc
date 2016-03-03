@@ -1,18 +1,20 @@
-VERSION=0.2.4
+VERSION=0.2.5
 
 build: pre
 	@echo "build litc v${VERSION}"
-	@go build -o litc
+	@go build -ldflags "-X main.version=${VERSION}" -o litc
 
 pre:
-	@echo "preprocess main.go.md"
+	@echo "pre-processing main.go.md"
 	@./litc-bootstrap main.go.md main.go
 
 bootstrap:
-	@echo "bootstrap litc v${VERSION}"
-	@go build -o litc-bootstrap
+	@echo "bootstrap litc v${VERSION}..."
+	@go build -ldflags "-X main.version=${VERSION}" -o litc-bootstrap
+	@./litc-bootstrap version
 
 test: build
+	@./litc version
 	@mkdir -p tmp
 	@echo "build test sample"
 	@./litc samples/sample.go.md tmp/main.go

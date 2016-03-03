@@ -15,6 +15,7 @@
 the application is really lightweight and small in implementation.
 
 	var version = "0.2.4"
+
 	func main() {
 
 # input
