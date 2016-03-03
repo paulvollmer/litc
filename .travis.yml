@@ -8,6 +8,7 @@ go:
 
 script:
   - cd go
+  - ls
   - make init
-  - make build
+  - make test
   
