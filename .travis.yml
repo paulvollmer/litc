@@ -7,8 +7,6 @@ go:
   - tip
 
 script:
-  - cd go
-  - ls
-  - make init
+  - cd golang
+  - make bootstrap
   - make test
-  
