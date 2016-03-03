@@ -8,7 +8,7 @@ import (
 // the version global var will be set by the make go build call.
 // to read the variable by go build -ldflags it must be the type of string.
 
-var Version = "0.3.1"
+var Version = "0.3.1b"
 
 func ProcessFile(src string, remove bool) ([]byte, error) {
 	inputData, err := ioutil.ReadFile(src)
