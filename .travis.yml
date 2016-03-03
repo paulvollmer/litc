@@ -3,3 +3,8 @@ go:
   - 1.4
   - 1.5
   - tip
+
+script:
+  - make init
+  - make build
+  
