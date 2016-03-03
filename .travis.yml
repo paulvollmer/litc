@@ -8,5 +8,6 @@ go:
 
 script:
   - cd go
-  - make init && make build
+  - make init
+  - make build
   
