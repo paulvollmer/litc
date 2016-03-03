@@ -11,5 +11,5 @@ export the fmt package to easy print to stdout
 the tiny hello world sample
 
     func main() {
-      fmt.Println("Hello World")
+      fmt.Println("sample executable")
     }
