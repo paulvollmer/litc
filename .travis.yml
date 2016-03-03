@@ -5,6 +5,5 @@ go:
   - tip
 
 script:
-  - make init
-  - make build
+  - cd go && make init && make build
   
