@@ -1,6 +1,6 @@
 
 build:
-	@./litc-bootstrap main.lit main.go
+	@./litc-bootstrap main.md main.go
 	@go build -o litc
 
 init:
@@ -8,7 +8,7 @@ init:
 
 test: build
 	@mkdir -p tmp
-	./litc samples/sample.lit tmp/main.go
+	./litc samples/sample.md tmp/main.go
 	@go run tmp/main.go
 	@rm -rf tmp
 
