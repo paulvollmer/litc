@@ -4,7 +4,7 @@ lets start with a hello world golang sample
 
     package main
 
-export the fmt package to easy print to stdout
+import the fmt package to easy print to stdout
 
     import "fmt"
 
